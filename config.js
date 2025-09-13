@@ -15,6 +15,6 @@ window.SHOP = {
   stripe: {
     buyButtonId: "STRIPE_BUY_BUTTON_ID_HERE",
     publishableKey: "pk_live_OR_test_KEY_HERE",
-    paymentLinkUrl: "https://buy.stripe.com/YOUR_PAYMENT_LINK"
+    paymentLinkUrl: "https://buy.stripe.com/7sY6oHbIvajEgY50Y98ww00"
   }
 };
