@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Veilig Laden Ultra Kabelmat 2m (D-Line) – Webshop</title>
+  <meta name="description" content="Koop de Veilig Laden Ultra Kabelmat (2 meter) – stevige kabelmat/kabelgoot voor EV-laadkabels. Beschermt je kabel, voorkomt struikelen en is geschikt voor buiten.">
+  <meta name="theme-color" content="#0e4030">
+  <link rel="icon" href="assets/product.png">
+  <link rel="canonical" href="https://YOUR-GITHUB-USERNAME.github.io/YOUR-REPO-NAME/">
+
+  <!-- OpenGraph/Twitter -->
+  <meta property="og:type" content="product">
+  <meta property="og:title" content="Veilig Laden Ultra Kabelmat 2m (D-Line)">
+  <meta property="og:description" content="Bescherm je EV-laadkabel en voorkom struikelen. Geschikt voor buiten.">
+  <meta property="og:image" content="assets/product.png">
+  <meta property="og:url" content="https://YOUR-GITHUB-USERNAME.github.io/YOUR-REPO-NAME/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Minimal CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Stripe Buy Button (optional, if you use Buy Button) -->
+  <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+
+  <!-- JSON-LD Product schema -->
+  <script type="application/ld+json" id="jsonld-product"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="#"><span class="logo">⚡</span> Veilig Laden</a>
+      <nav class="nav">
+        <a href="#voordelen">Voordelen</a>
+        <a href="#specificaties">Specificaties</a>
+        <a href="#faq">FAQ</a>
+        <a href="#kopen" class="btn btn-ghost">Koop nu</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1>Veilig Laden Ultra Kabelmat – 2 meter</h1>
+          <p class="lead">De slimme, stevige oplossing om je <strong>EV-laadkabel veilig</strong> over stoep of oprit te leiden – <strong>anti-struikel</strong>, <strong>weerbestendig</strong> en klaar voor dagelijks gebruik.</p>
+          <div class="hero-cta">
+            <a href="#kopen" class="btn btn-primary">Koop direct</a>
+            <a href="https://www.tonymaakt.nl/product/19615547/veilig-laden-ultra-kabelmat-2m-d-line" target="_blank" rel="noopener" class="btn btn-ghost">Productinformatie</a>
+          </div>
+          <ul class="hero-bullets">
+            <li>✔ Voorkomt struikelen over je laadkabel</li>
+            <li>✔ Beschermt kabel én stekker</li>
+            <li>✔ Voor buiten: oprit, tuinpad of stoep</li>
+            <li>✔ Past op gangbare EV-laadkabeldiktes</li>
+            <li>✔ <strong>Gratis verzending (NL & BE)</strong></li>
+          </ul>
+        </div>
+        <div class="hero-media">
+          <img src="assets/product.png" alt="Veilig Laden Ultra Kabelmat 2m (D-Line)">
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits / uitleg -->
+    <section id="voordelen" class="benefits">
+      <div class="wrap">
+        <h2>Waarom deze kabelmat?</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Veilig voor voorbijgangers</h3>
+            <p>Een losse kabel is snel een struikelrisico. Met de kabelmat ligt je kabel strak en zichtbaar, zodat iedereen veilig kan passeren.</p>
+          </article>
+          <article class="card">
+            <h3>Bescherming voor je kabel</h3>
+            <p>De stevige profielconstructie voorkomt knikken en slijtage van de kabel. Dat verlengt de levensduur en voorkomt storingen.</p>
+          </article>
+          <article class="card">
+            <h3>Gemaakt voor buiten</h3>
+            <p>Weerbestendig materiaal met grip. Bestand tegen regen en dagelijks gebruik – ideaal voor oprit of tuinpad.</p>
+          </article>
+          <article class="card">
+            <h3>Plug-and-play</h3>
+            <p>Rol uit, leg de kabel in de sleuf en klaar. Geen gereedschap nodig. Werkt met de meeste EV-laadkabels.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Productblok met prijs/checkout -->
+    <section id="kopen" class="product">
+      <div class="wrap product-grid">
+        <div class="product-info">
+          <h2>Veilig Laden Ultra Kabelmat – 2m (D-Line)</h2>
+          <p class="sku">SKU: <span id="sku">VL-ULTRA-2M-DLINE</span></p>
+          <p class="price"><span id="price">€149,00</span> <small>incl. btw</small></p>
+
+          <div class="selectors">
+            <label>Aantal
+              <input id="qty" type="number" min="1" value="1" inputmode="numeric">
+            </label>
+            <label>Verzending
+              <select id="shipping">
+                <option value="pickup">Afhalen (Castricum) – gratis</option>
+                <option value="nl">Verzending NL – gratis</option>
+                <option value="be">Verzending BE – gratis</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="totals">
+            <div><span>Subtotaal</span><strong id="subtotal">€149,00</strong></div>
+            <div><span>Verzending</span><strong id="shipcost">€0,00</strong></div>
+            <div class="grand"><span>Totaal</span><strong id="grand">€149,00</strong></div>
+          </div>
+
+          <div class="cta-row">
+            <div id="stripe-buybutton-wrapper" class="stripe-buybutton-wrapper" hidden>
+              <stripe-buy-button
+                buy-button-id="STRIPE_BUY_BUTTON_ID_HERE"
+                publishable-key="pk_live_OR_test_KEY_HERE"
+              >
+              </stripe-buy-button>
+            </div>
+            <a id="paylink" class="btn btn-primary" target="_blank" rel="noopener">Afrekenen met Stripe</a>
+            <p class="fineprint">Betalen met iDEAL, kaart of Apple Pay via Stripe. <strong>Gratis verzending</strong> binnen NL & BE.</p>
+          </div>
+
+          <p class="trust">
+            <span>🔒</span> Beveiligde betaling via Stripe • <span>🚚</span> Verzending binnen 1–2 werkdagen
+          </p>
+        </div>
+        <div class="product-visual">
+          <img src="assets/product.png" alt="Kabelmat 2 meter voor EV-laadkabels">
+          <ul class="spec-points">
+            <li>Lengte: 2 meter</li>
+            <li>Toepassing: buiten</li>
+            <li>Materiaal: duurzaam kunststof</li>
+            <li>Kleur: zwart</li>
+            <li>Merk/Type: D-Line</li>
+          </ul>
+          <a class="link" href="https://www.tonymaakt.nl/product/19615547/veilig-laden-ultra-kabelmat-2m-d-line" target="_blank" rel="noopener">Bekijk de volledige productpagina →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specificaties & FAQ -->
+    <section id="specificaties" class="details">
+      <div class="wrap">
+        <h2>Specificaties</h2>
+        <div class="cols">
+          <ul>
+            <li>Lengte: 2 m</li>
+            <li>Geschikt voor EV-laadkabels</li>
+            <li>Profiel met kabelsleuf</li>
+          </ul>
+          <ul>
+            <li>Weerbestendig – voor buitengebruik</li>
+            <li>Antislip-profiel</li>
+            <li>Merk: D-Line</li>
+          </ul>
+        </div>
+
+        <h2 id="faq">Veelgestelde vragen</h2>
+        <details><summary>Kan de mat buiten blijven liggen?</summary><p>Ja. De kabelmat is ontworpen voor buiten en kan tegen regen en normaal gebruik.</p></details>
+        <details><summary>Past mijn laadkabel?</summary><p>Ja, de sleuf is geschikt voor gangbare EV-laadkabels (AC-laden).</p></details>
+        <details><summary>Hoe snel verzenden jullie?</summary><p>Meestal binnen 1–2 werkdagen. Bij afhalen nemen we contact op voor het ophaalmoment in Castricum.</p></details>
+      </div>
+    </section>
+
+    <section class="legal">
+      <div class="wrap">
+        <p class="small">Door te bestellen ga je akkoord met de voorwaarden en privacyverklaring. Herroepingsrecht: 14 dagen na ontvangst (ongebruikt, in originele staat). Retourkosten voor de klant, tenzij productiefout. Garantie: 12 maanden op fabricagefouten.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <small>© <span id="year"></span> Veilig Laden • Gemaakt voor GitHub Pages</small>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

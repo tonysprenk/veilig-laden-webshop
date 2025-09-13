@@ -1,0 +1,59 @@
+/* Sleek, modern, rustig design (ongewijzigd) */
+:root{
+  --bg:#0b0f0e;
+  --panel:#0f1715;
+  --card:#111c19;
+  --muted:#9fb4ab;
+  --text:#e7f1ec;
+  --brand:#2bd18b;
+  --ring: rgba(43,209,139,0.25);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:linear-gradient(180deg,#0b0f0e 0%,#0d1311 100%);color:var(--text);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+img{max-width:100%;height:auto;display:block}
+.wrap{max-width:1100px;margin:auto;padding:24px}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+.btn{display:inline-block;padding:12px 16px;border-radius:12px;border:1px solid var(--brand);background:transparent;color:var(--text);transition:transform .06s ease, background .2s}
+.btn:hover{transform:translateY(-1px)}
+.btn.btn-primary{background:var(--brand);color:#05110c;border-color:var(--brand);text-decoration:none}
+.btn.btn-ghost{background:transparent;color:var(--text)}
+.site-header{position:sticky;top:0;backdrop-filter:saturate(1.2) blur(10px);border-bottom:1px solid #17302a;background:rgba(5,17,12,.7);z-index:20}
+.brand{display:flex;gap:10px;align-items:center;font-weight:800}
+.brand .logo{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:9px;background:var(--brand);color:#03100a}
+.nav a{margin-left:14px}
+.hero{padding:24px 0}
+.hero-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:24px;align-items:center}
+.lead{color:var(--muted);font-size:1.1rem}
+.hero-cta{display:flex;gap:10px;margin-top:12px}
+.hero-bullets{margin:14px 0 0 0;padding:0 0 0 20px;color:var(--muted)}
+.hero-media img{border-radius:16px;border:1px solid #1a2e28;background:linear-gradient(180deg,#0f1a16,#0d1513)}
+.benefits{padding:8px 0 10px 0}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:12px}
+.card{background:var(--card);border:1px solid #18332c;border-radius:16px;padding:16px}
+.card h3{margin-top:0}
+.product{padding:10px 0}
+.product-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+.product-info{background:var(--panel);border:1px solid #17302a;border-radius:16px;padding:18px;position:sticky;top:90px}
+.sku{color:var(--muted);margin-top:-6px}
+.price{font-size:1.8rem;margin:.5rem 0}
+.selectors{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.selectors input,.selectors select{width:100%;background:#0a130f;border:1px solid #1a2e28;border-radius:12px;padding:10px;color:var(--text);outline:none}
+.selectors input:focus,.selectors select:focus{box-shadow:0 0 0 4px var(--ring);border-color:var(--brand)}
+.totals{display:grid;gap:6px;border-top:1px dashed #19332c;padding-top:10px;margin-top:10px}
+.totals .grand{border-top:1px solid #1a2e28;margin-top:6px;padding-top:6px;font-size:1.2rem}
+.cta-row{display:grid;gap:10px;margin-top:12px}
+.trust{color:var(--muted);display:flex;gap:12px;align-items:center}
+.product-visual img{border-radius:16px;border:1px solid #1a2e28}
+.spec-points{columns:2;margin:10px 0 0 0;color:var(--muted)}
+.link{display:inline-block;margin-top:10px}
+.details{padding:6px 0 16px 0}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+details{background:var(--panel);border:1px solid #17302a;border-radius:12px;padding:12px;margin:8px 0}
+.small{color:var(--muted)}
+.site-footer{border-top:1px solid #17302a;background:#0a130f}
+@media (max-width:900px){
+  .hero-grid,.product-grid,.cards,.cols{grid-template-columns:1fr}
+}
+/* Stripe Buy Button wrapper */
+.stripe-buybutton-wrapper{background:#08110d;border:1px solid #17302a;border-radius:12px;padding:12px}
